@@ -1,0 +1,204 @@
+body,html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.section_top{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: change 50s infinite ease-in-out;
+    text-align: center;
+    justify-content: center;
+}
+@keyframes change {
+    0%{
+        background-image: url(images/img.jpg);
+    }
+    10%{
+        background-image: url(images/img1.jpg);
+    }
+    20%{
+        background-image: url(images/img2.jpg);
+    }
+    30%{
+        background-image: url(images/img3.jpg);
+    }
+    40%{
+        background-image: url(images/img4.jpg);
+    }
+    50%{
+        background-image: url(images/img5.jpg);
+    }
+    60%{
+        background-image: url(images/img6.jpg);
+    }
+    70%{
+        background-image: url(images/img7.jpg);
+    }
+    80%{
+        background-image: url(images/img8.jpg);
+    }
+    90%{
+        background-image: url(images/img9.jpg);
+    }
+    100%{
+        background-image: url(images/img.jpg);
+    }
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ea1538;
+    transform: .3s;
+}
+.hov:hover{
+    transform: scale(1.1);
+}
+.package{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    
+    background-color: whitesmoke;
+}
+
+.allcard{
+    display: flex;
+}
+.card{
+    height: 350px;
+    width: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+img{
+    height: 350px;
+    width: 500px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.intro{
+    height: 80px;
+    width: 385px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    
+    transition: .5s;
+}
+.intro p{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background-color: black;
+    color: aliceblue;
+
+
+}
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+.but{
+    position: relative;
+    margin-top: 80px;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center; 
+    background-color: whitesmoke;
+}
+.box{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.box img{
+    height: 300px;
+    width: 450px;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    background-image: url(images/cauayan-island-resort-YWl00OqKnOs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about .contact{
+    position: relative;
+    background-color: aliceblue;
+    height: 400px;
+    width: 80%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.social img{
+    height: 50px;
+    width: 50px;
+}
+
